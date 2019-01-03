@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingView">
+        <attr name="lv_external_radius" format="dimension" />
+        <attr name="lv_internal_radius" format="dimension" />
+        <attr name="lv_duration" format="integer" />
+        <attr name="lv_start_color" format="color" />
+        <attr name="lv_end_color" format="color" />
+    </declare-styleable>
+
+    <color name="color_start">#00CFDB</color>
+    <color name="color_end">#0063A6</color>
+</resources>
