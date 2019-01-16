@@ -51,7 +51,7 @@ you can also add in XML
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="24dp"
-        app:lv_duration="2"
+        app:lv_duration="30"
         app:lv_end_color="@color/color_end"
         app:lv_external_radius="24dp"
         app:lv_internal_radius="4dp"
