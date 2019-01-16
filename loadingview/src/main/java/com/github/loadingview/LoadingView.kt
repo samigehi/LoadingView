@@ -27,7 +27,7 @@ class LoadingView(context: Context, atr: AttributeSet?) : View(context, atr) {
     private var disposable: Disposable? = null
     private var mPaint: Paint? = null
     private val mPath = Path()
-    private var mDuration = 2
+    private var mDuration = 30
 
     internal var colors: IntArray? = null
     internal var angle1 = 0
@@ -114,6 +114,8 @@ class LoadingView(context: Context, atr: AttributeSet?) : View(context, atr) {
 
     fun start() {
         if (disposable == null || disposable!!.isDisposed) {
+            //if(mDuration < 30)
+             // mDuration = 30
             disposable = Observable.interval(mDuration.toLong(), TimeUnit.MILLISECONDS).subscribe({ aLong -> update() })
         }
         this.visibility = View.VISIBLE
@@ -133,13 +135,15 @@ class LoadingView(context: Context, atr: AttributeSet?) : View(context, atr) {
 
     private fun update() {
 
-        setOffset(angle1 % radian / radian.toFloat())
+        //remove animation
+        //setOffset(angle1 % radian / radian.toFloat())
 
-        angle1++
-        if (angle1 == 360) {
+        angle1 = angle1 + 10
+        if (angle1 >= 360) {
             angle1 = 0
             cyclic++
         }
+        postInvalidate()
     }
 
     override fun onDraw(canvas: Canvas) {
