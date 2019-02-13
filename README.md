@@ -16,7 +16,7 @@ A simple and cool beizer loading view and beizer loading dialog.
 
 ```gradle
 dependencies {
-  compile 'com.github.samigehi:loadingView:1.1'
+  implementation 'com.samigehi:loadingview:1.1'
 }
 ```
 
