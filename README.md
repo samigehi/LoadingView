@@ -23,7 +23,7 @@ dependencies {
 *Java*
 
  ```
- LoadingDialog dialog = LoadingDialog.get(this).show();
+ LoadingDialog dialog = LoadingDialog.Companion.get(this).show();
 
 // later dismiss
 dialog.hide()
