@@ -10,7 +10,7 @@
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:layout_gravity="center"
-        app:lv_duration="2"
+        app:lv_duration="100"
         app:lv_end_color="@color/color_end"
         app:lv_external_radius="24dp"
         app:lv_internal_radius="4dp"
